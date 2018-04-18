@@ -27,6 +27,7 @@ import { AdminAuthGuard } from './admin-auth-guard';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import {FormsModule} from '@angular/forms';
 import {CustomFormsModule} from 'ng2-validation';
+import { DataTableModule } from 'angular-4-data-table';
 
 
 @NgModule({
@@ -46,9 +47,12 @@ import {CustomFormsModule} from 'ng2-validation';
     ProductFormComponent
   ],
   imports: [
-    BrowserModule,CustomFormsModule,
+    BrowserModule,
+    CustomFormsModule,
     AngularFireModule.initializeApp(environment.firebase),NgbModule.forRoot(),
-    AngularFireAuthModule,AngularFireDatabaseModule,FormsModule,
+    AngularFireAuthModule
+    ,AngularFireDatabaseModule,
+    FormsModule,DataTableModule,
     RouterModule.forRoot([
       {path:'' , component:HomeComponent},
       {path:'login', component:LoginComponent},
