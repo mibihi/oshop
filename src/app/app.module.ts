@@ -27,7 +27,7 @@ import { AdminAuthGuard } from './admin-auth-guard';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import {FormsModule} from '@angular/forms';
 import {CustomFormsModule} from 'ng2-validation';
-import { DataTableModule } from 'angular-4-data-table';
+import { DataTableModule } from 'angular-4-data-table-fix';
 
 
 @NgModule({
