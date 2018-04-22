@@ -54,7 +54,7 @@ import { DataTableModule } from 'angular-4-data-table-fix';
     ,AngularFireDatabaseModule,
     FormsModule,DataTableModule,
     RouterModule.forRoot([
-      {path:'' , component:HomeComponent},
+      {path:'' , component:ProductsComponent},
       {path:'login', component:LoginComponent},
       {path:'products', component:ProductsComponent},
       {path:'shopping-cart', component:ShoppingCartComponent},   
