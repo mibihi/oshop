@@ -22,8 +22,13 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.1",
+<<<<<<< HEAD
     "angular-4-data-table": "^0.2.3",
     "angularfire2": "^4.0.0-rc.1",
+=======
+    "angular-4-data-table-fix": "^0.1.2",
+    "angularfire2": "^4.0.0-rc.0",
+>>>>>>> b34f0a87676160a5ce1f7b5e4ee2aea12019c1e4
     "bootstrap": "^4.0.0-beta",
     "core-js": "^2.4.1",
     "firebase": "^4.2.0",
