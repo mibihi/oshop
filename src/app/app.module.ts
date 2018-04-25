@@ -28,6 +28,8 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
 import {FormsModule} from '@angular/forms';
 import {CustomFormsModule} from 'ng2-validation';
 import { DataTableModule } from 'angular-4-data-table-fix';
+import { ProductFilterComponent } from './products/product-filter/product-filter.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { DataTableModule } from 'angular-4-data-table-fix';
     AdminOrdersComponent,
     LoginComponent,
     NotFoundComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductFilterComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
