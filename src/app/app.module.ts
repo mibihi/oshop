@@ -30,6 +30,8 @@ import {CustomFormsModule} from 'ng2-validation';
 import { DataTableModule } from 'angular-4-data-table-fix';
 import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ShoppingCartService } from './shopping-cart.service';
+import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
 
 
 @NgModule({
@@ -48,7 +50,8 @@ import { ProductCardComponent } from './product-card/product-card.component';
     NotFoundComponent,
     ProductFormComponent,
     ProductFilterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductQuantityComponent
   ],
   imports: [
     BrowserModule,
@@ -84,7 +87,8 @@ import { ProductCardComponent } from './product-card/product-card.component';
       
     ])
   ], 
-  providers: [AuthService,AuthGuardService,UserService,AdminAuthGuard,CategoriesService,ProductService],
+  providers: [AuthService,AuthGuardService,UserService,AdminAuthGuard,CategoriesService,ProductService
+  ,ShoppingCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
