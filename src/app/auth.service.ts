@@ -18,6 +18,7 @@ user$:Observable<firebase.User>;
     private route : ActivatedRoute
   ) {
      this.user$ = afAuth.authState;
+     
    }
   logout(){
     this.afAuth.auth.signOut();
