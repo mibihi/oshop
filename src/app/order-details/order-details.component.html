@@ -1,16 +1,31 @@
-<div class="card" >
-    <div class="card-body">
-      <h5 class="card-title" ></h5>
-      <p class="card-text">You have {{order.datePlaced}} items in your shopping cart</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-         
-          <div class="float-right"> </div>
-        </li>
-        <li class="list-group-item font-weight-bold">
-         Total
-       <div class="float-right"></div> 
-        </li>
-      </ul>
-    </div>
-  </div>
+
+  <p>
+      Order You Placed on {{datepl | date}}
+    </p>
+    <p>You have  {{numOfItems }} items in your Order</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Item & Quantity</th>
+          <th>price</th>
+          <th class="text-center" style="width:230px">total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of Data">
+          <td> <span class="badge badge-warning badge-pill">{{item.quantity}}</span>X
+            {{item.title}}</td>
+          <td>{{item.price| currency:'USD':true}}</td>
+          <td class="text-center">
+          {{item.totalprice | currency:'USD':true}}  
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold" >Total Order Price</td>
+          <td></td>
+          <td class="text-center" style="font-weight:bold" >          {{orderTotalPrice | currency:'USD':true}}  
+            </td>
+        </tr>
+      </tbody>
+     
+    </table>
